@@ -1,452 +1,422 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>ECOvid</title>
-    <!-- Favicon icon -->
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="16x16"
-      href="./images/favicon.png"
-    />
-    <link rel="stylesheet" href="./vendor/nice-select/css/nice-select.css" />
-    <link
-      rel="stylesheet"
-      href="./vendor/owl-carousel/css/owl.theme.default.css"
-    />
-    <link
-      rel="stylesheet"
-      href="./vendor/owl-carousel/css/owl.carousel.min.css"
-    />
-    <link
-      rel="stylesheet"
-      href="./vendor/magnific-popup/magnific-popup.min.css"
-    />
-    <!-- Custom Stylesheet -->
-    <link rel="stylesheet" href="./css/style.css" />
-  </head>
 
-  <body>
-    <div id="preloader">
-      <div class="sk-three-bounce">
-        <div class="sk-child sk-bounce1"></div>
-        <div class="sk-child sk-bounce2"></div>
-        <div class="sk-child sk-bounce3"></div>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>ECOvid</title>
+  <!-- Favicon icon -->
+  <link rel="icon" type="image/png" sizes="16x16" href="./images/favicon.png" />
+  <link rel="stylesheet" href="./vendor/nice-select/css/nice-select.css" />
+  <link rel="stylesheet" href="./vendor/owl-carousel/css/owl.theme.default.css" />
+  <link rel="stylesheet" href="./vendor/owl-carousel/css/owl.carousel.min.css" />
+  <link rel="stylesheet" href="./vendor/magnific-popup/magnific-popup.min.css" />
+  <!-- Custom Stylesheet -->
+  <link rel="stylesheet" href="./css/style.css" />
+  <link rel="stylesheet" href="./css/covidstats.css" />
+</head>
+
+<body>
+  <div id="preloader">
+    <div class="sk-three-bounce">
+      <div class="sk-child sk-bounce1"></div>
+      <div class="sk-child sk-bounce2"></div>
+      <div class="sk-child sk-bounce3"></div>
+    </div>
+  </div>
+
+  <div id="main-wrapper">
+    <div class="header">
+      <div class="container">
+        <div class="row">
+          <div class="col-xl-12">
+            <div class="navigation">
+              <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                <a class="navbar-brand" href="index.html">
+                  <span></span>
+                  <img src="./images/clean/ecov5.svg" alt="" class="img-fluid" />
+                </a>
+                <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                  <ul class="navbar-nav">
+                    <li class="nav-item dropdown">
+                      <a class="nav-link" href="#main">Главная</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#calculator">Калькулятор</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#limitations">Недостатки</a>
+                    </li>
+                  </ul>
+                </div>
+              </nav>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
 
-    <div id="main-wrapper">
-      <div class="header">
+    <div class="hero position-relative overflow-hidden" id="main">
         <div class="container">
-          <div class="row">
-            <div class="col-xl-12">
-              <div class="navigation">
-                <nav class="navbar navbar-expand-lg navbar-light bg-light">
-                  <a class="navbar-brand" href="index.html">
-                    <span></span>
-                    <img
-                      src="./images/clean/ecov5.svg"
-                      alt=""
-                      class="img-fluid"
-                    />
-                  </a>
-                  <div class="collapse navbar-collapse" id="navbarNavDropdown">
-                    <ul class="navbar-nav">
-                      <li class="nav-item dropdown">
-                        <a
-                          class="nav-link dropdown-toggle"
-                          href="javascript:void(0);"
-                          data-toggle="dropdown"
-                          >Главная</a
-                        >
-                      </li>
-                      <li class="nav-item">
-                        <a class="nav-link" href="#calculator">Калькулятор</a>
-                      </li>
-                      <li class="nav-item">
-                        <a class="nav-link" href="./qurantine.html"
-                          >Недостатки</a
-                        >
-                      </li>
-                    </ul>
-                  </div>
-                </nav>
+        <div class="row justify-content-between align-items-center">
+          <div class="col-xl-7 col-lg-7">
+            <div class="hero-content text-left m-auto">
+              <h1>
+                <span class="" style="color: #13236d">ECOvidstats</span>
+              </h1>
+              <h3 style="color: #4442a7">
+                Мусор от пандемии - новая проблема экологии
+              </h3>
+              <p>
+                Если до пандемии коронавируса одной из главных экологических
+                проблем был пластиковый мусор, то теперь его место заняли
+                медицинские маски.
+              </p>
+              <p></p>
+            </div>
+            <div class="row count-miter text-left">
+              <div class="col-4">
+                <span class="count-title">Число произведенных масок за 2020 год</span>
+                <h2 class="" id="US_Positive">52 млрд. штук</h2>
               </div>
+              <div class="col-4">
+                <span class="count-title">Число выброшенных масок в Мировой океан за 2020 год</span>
+                <h2 class="" id="US_Death">1,56 млрд. штук</h2>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-5 col-12 relative">
+            <div class="d-none d-lg-block">
+              <img src="./images/clean/covid2.png" class="position-absolute left-0 w-60vw -t-30wh" alt="" style="" />
+            </div>
+            <div class="d-block d-lg-none">
+              <img src="./images/clean/covid2.png" class="img-fluid" alt="" style="" />
             </div>
           </div>
         </div>
       </div>
+    </div>
 
-      <div class="hero position-relative overflow-hidden" id="app-banner">
-        <img
-          src="./images/clean/covid2.png"
-          alt=""
-          style="
-            object-fit: contain;
-            position: absolute;
-            right: -35%;
-            bottom: 0;
-            width: auto;
-            height: 65vh;
-          "
-        />
-        <div class="container">
-          <div class="row justify-content-between align-items-center">
-            <div class="col-xl-7 col-lg-7">
-              <div class="hero-content text-left m-auto">
-                <h1>
-                  <span class="" style="color: #13236d">ECOvidstats</span>
-                </h1>
-                <h3 style="color: #4442a7">
-                  Мусор от пандемии - новая проблема экологии
-                </h3>
-                <p>
-                  Если до пандемии коронавируса одной из главных экологических
-                  проблем был пластиковый мусор, то теперь его место заняли
-                  медицинские маски.
-                </p>
-                <p></p>
+    <div class="hero-symptom section-padding">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-xl-6">
+            <div class="section-title text-center">
+              <h2>Сравнение защитных масок</h2>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-xl-4 col-lg-4 col-md-4">
+            <div class="symptom-content">
+              <span><img src="./images/clean/ecov.svg" alt="" /></span>
+              <h4 style="margin: auto">Тканевая многоразовая маска</h4>
+              <p>
+                Такие маски предназначаются для бытового использования в
+                обычных, а не эпидемических условиях. Их антибактериальная и
+                антивирусная защита никем не гарантируется. К тому же единых
+                требований к ним не установлено.
+              </p>
+            </div>
+          </div>
+          <div class="col-xl-4 col-lg-4 col-md-4">
+            <div class="symptom-content">
+              <span><img src="./images/clean/ecov1.svg" alt="" /></span>
+              <h4 style="margin: auto">Нетканевая многоразовая маска</h4>
+              <p>
+                В нетканых материалах сквозных отверстий нет. Проходящий через
+                слои маски воздух на своем пути обязательно встречает волокна,
+                которые и ловят капельки мокроты и пыль.Нетканые материалы
+                обеспечивают лучшую фильтрацию.
+              </p>
+            </div>
+          </div>
+          <div class="col-xl-4 col-lg-4 col-md-4">
+            <div class="symptom-content">
+              <span><img src="./images/clean/ecov2.svg" alt="" /></span>
+              <h4 style="margin: auto">Медицинская маска</h4>
+              <p>
+                Медицинские маски – это медицинские изделия, которые
+                предназначены для защиты окружающих от носителя инфекции, а не
+                для защиты того, кто ее носит. Они также могут быть эффективны
+                для сокращения выхода микробов при кашле или чиханье носителя
+                инфекции.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="how-spread section-padding pt-100" id="limitations">
+      <div class="container">
+        <div class="row align-items-center justify-content-between">
+          <div class="col-xl-5 col-lg-5 col-md-6">
+            <div class="spread-img">
+              <img src="./images/clean/covid.png" alt="" class="img-fluid" />
+            </div>
+          </div>
+          <div class="col-xl-6 col-lg-6 col-md-6">
+            <div class="section-title">
+              <h2>Недостатки одноразовых медицинских масок</h2>
+            </div>
+            <div class="spread-content">
+              <ul>
+                <li>
+                  <i class="mdi mdi-check"></i>
+                  Защитная часть маски изготовлена, собственно, не из ткани, а
+                  из полипропилена, то есть пластика. срок их естественного
+                  разложения при попадании в природу может достигать столетий.
+                </li>
+                <li>
+                  <i class="mdi mdi-check"></i>
+                  Маски и перчатки не только, разлагаясь, выделяют токсичные
+                  вещества, но еще и представляют собой опасность для
+                  животных. Дельфины и морские черепахи, например, могут
+                  перепутать плавающие перчатки с медузами.Съев такую
+                  «резиновую медузу», он обрекают себя на верную гибель.
+                  Запутавшись в масках, они могут просто задохнуться.
+                </li>
+                <li>
+                  <i class="mdi mdi-check"></i>
+                  Наконец, при разложении масок и перчаток образуются
+                  микроскопические частички пластика. В море его поглощает
+                  рыба, в итоге пластик оказывается в наших тарелках. На суше
+                  микропластик загрязняет в грунтовые воды и попадает в нашу
+                  питьевую воду.
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="prevention section-padding bg-light" id="calculator">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-xl-6">
+            <div class="section-title text-center">
+              <h2>калькулятор масок</h2>
+              <p>Через</p>
+              <div class="input-calculator m-auto text-center" style="
+                    border: 3px solid gray;
+                    border-color: gray;
+                    border-radius: 6px;
+                    padding: 4px 10px;
+                    width: fit-content;
+                  ">
+                <input class="calculator text-center" id="days" style="
+                      outline: none;
+                      border: transparent;
+                      border-width: 0px;
+                      width: 30px;
+                      background: transparent;
+                    " />
               </div>
-              <div class="row count-miter text-left">
-                <div class="col-4">
-                  <span class="count-title"
-                    >Число произведенных масок за 2020 год</span
-                  >
-                  <h2 class="" id="US_Positive">52 млрд. штук</h2>
+              <p>дн(я/ей) будет произведено</p>
+              <h3 id="masks-after-days">0</h3>
+              <p>масок</p>
+              <p>Я использую</p>
+              <div class="input-calculator m-auto text-center" style="
+                    border: 3px solid gray;
+                    border-color: gray;
+                    border-radius: 6px;
+                    padding: 4px 10px;
+                    width: fit-content;
+                  ">
+                <input class="calculator" id="mask" style="
+                      outline: none;
+                      border: transparent;
+                      border-width: 0px;
+                      width: 30px;
+                      background: transparent;
+                      text-align: center;
+                    " />
+              </div>
+              <p>мас(ки/ок) в день</p>
+              <h3 id="masks-on-covid">0</h3>
+              <p>
+                мас(ки/ок) я потратил за время пандемии, которые будут
+                разлагаться
+              </p>
+              <p>лет, что экивалентно времени разлагания:</p>
+            </div>
+          </div>
+          <div class="col-xl-6 col-12">
+            <div class="row">
+              <div class="col-md-6 col-12">
+                <div class="have-symptom-content">
+                  <span><img src="./" alt="" /></span>
+                  <h3 id="plastic-bottles">435728</h3>
+                  <h4>Пластиковых бутылок</h4>
                 </div>
-                <div class="col-4">
-                  <span class="count-title"
-                    >Число выброшенных масок в Мировой океан за 2020 год</span
-                  >
-                  <h2 class="" id="US_Death">1,56 млрд штук</h2>
+              </div>
+              <div class="col-md-6 col-12">
+                <div class="have-symptom-content">
+                  <span><img src="./images/icons/face.png" alt="" /></span>
+                  <h3 id="plastic-bags">435728</h3>
+                  <h4>Пластиковые пакеты</h4>
                 </div>
               </div>
             </div>
-            <div class="col-xl-5 col-lg-5">
-              <div class="hero-img"></div>
-            </div>
           </div>
         </div>
       </div>
+    </div>
+  </div>
 
-      <div class="hero-symptom section-padding">
-        <div class="container">
-          <div class="row justify-content-center">
-            <div class="col-xl-6">
-              <div class="section-title text-center">
-                <h2>Сравнение защитных масок</h2>
-              </div>
-            </div>
-          </div>
-          <div class="row">
-            <div class="col-xl-4 col-lg-4 col-md-4">
-              <div class="symptom-content">
-                <span><img src="./images/clean/ecov.svg" alt="" /></span>
-                <h4 style="margin: auto">Тканевая многоразовая маска</h4>
-                <p>
-                  Такие маски предназначаются для бытового использования в
-                  обычных, а не эпидемических условиях. Их антибактериальная и
-                  антивирусная защита никем не гарантируется. К тому же единых
-                  требований к ним не установлено.
-                </p>
-              </div>
-            </div>
-            <div class="col-xl-4 col-lg-4 col-md-4">
-              <div class="symptom-content">
-                <span><img src="./images/clean/ecov1.svg" alt="" /></span>
-                <h4 style="margin: auto">Нетканевая многоразовая маска</h4>
-                <p>
-                  В нетканых материалах сквозных отверстий нет. Проходящий через
-                  слои маски воздух на своем пути обязательно встречает волокна,
-                  которые и ловят капельки мокроты и пыль.Нетканые материалы
-                  обеспечивают лучшую фильтрацию.
-                </p>
-              </div>
-            </div>
-            <div class="col-xl-4 col-lg-4 col-md-4">
-              <div class="symptom-content">
-                <span><img src="./images/clean/ecov2.svg" alt="" /></span>
-                <h4 style="margin: auto">Медицинская маска</h4>
-                <p>
-                  Медицинские маски – это медицинские изделия, которые
-                  предназначены для защиты окружающих от носителя инфекции, а не
-                  для защиты того, кто ее носит. Они также могут быть эффективны
-                  для сокращения выхода микробов при кашле или чиханье носителя
-                  инфекции.
-                </p>
-              </div>
-            </div>
+  <div class="bottom section-padding">
+    <div class="container">
+      <div class="row">
+        <div class="col-xl-4 col-lg-4 col-md-3 col-sm-8">
+          <div class="bottom-logo">
+            <img class="pb-3" src="./images/logo-white.png" alt="" />
+
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+            </p>
           </div>
         </div>
-      </div>
-
-      <div class="how-spread section-padding">
-        <div class="container">
-          <div class="row align-items-center justify-content-between">
-            <div class="col-xl-5 col-lg-5 col-md-6">
-              <div class="spread-img">
-                <img src="./images/clean/covid.png" alt="" class="img-fluid" />
-              </div>
-            </div>
-            <div class="col-xl-6 col-lg-6 col-md-6">
-              <div class="section-title">
-                <h2>Недостатки одноразовых медицинских масок</h2>
-              </div>
-              <div class="spread-content">
+        <div class="col-xl-2 col-lg-2 col-md-2 col-sm-4">
+          <div class="bottom-widget">
+            <h4 class="widget-title">QUICK LINK</h4>
+            <ul>
+              <li><a href="javascript:void(0)">Prevention</a></li>
+              <li><a href="javascript:void(0)">Qurantine</a></li>
+              <li><a href="javascript:void(0)">About</a></li>
+              <li><a href="javascript:void(0)">Help</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-xl-2 col-lg-2 col-md-3 col-sm-4">
+          <div class="bottom-widget">
+            <h4 class="widget-title">Important LINK</h4>
+            <ul>
+              <li><a href="javascript:void(0)">Hand Wash</a></li>
+              <li><a href="javascript:void(0)">Social Distance</a></li>
+              <li><a href="javascript:void(0)">Isolate</a></li>
+              <li><a href="javascript:void(0)">Difference</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-xl-4 col-lg-4 col-md-4 col-sm-8">
+          <div class="bottom-widget">
+            <h4 class="widget-title">Helpful LINK</h4>
+            <div class="row">
+              <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6">
                 <ul>
-                  <li>
-                    <i class="mdi mdi-check"></i>
-                    Защитная часть маски изготовлена, собственно, не из ткани, а
-                    из полипропилена, то есть пластика. срок их естественного
-                    разложения при попадании в природу может достигать столетий.
-                  </li>
-                  <li>
-                    <i class="mdi mdi-check"></i>
-                    Маски и перчатки не только, разлагаясь, выделяют токсичные
-                    вещества, но еще и представляют собой опасность для
-                    животных. Дельфины и морские черепахи, например, могут
-                    перепутать плавающие перчатки с медузами.Съев такую
-                    «резиновую медузу», он обрекают себя на верную гибель.
-                    Запутавшись в масках, они могут просто задохнуться.
-                  </li>
-                  <li>
-                    <i class="mdi mdi-check"></i>
-                    Наконец, при разложении масок и перчаток образуются
-                    микроскопические частички пластика. В море его поглощает
-                    рыба, в итоге пластик оказывается в наших тарелках. На суше
-                    микропластик загрязняет в грунтовые воды и попадает в нашу
-                    питьевую воду.
-                  </li>
+                  <li><a href="javascript:void(0)">Preparation</a></li>
+                  <li><a href="javascript:void(0)">Clean</a></li>
+                  <li><a href="javascript:void(0)">WHO Website</a></li>
+                  <li><a href="javascript:void(0)">CDC Website</a></li>
+                </ul>
+              </div>
+              <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6">
+                <ul>
+                  <li><a href="javascript:void(0)">Harvard Health</a></li>
+                  <li><a href="javascript:void(0)">NHS Website</a></li>
+                  <li><a href="javascript:void(0)">XMR to BTC</a></li>
+                  <li><a href="javascript:void(0)">ETC to DASH</a></li>
                 </ul>
               </div>
             </div>
           </div>
         </div>
       </div>
+    </div>
+  </div>
 
-      <div class="prevention section-padding bg-light" id="calculator">
-        <div class="container">
-          <div class="row justify-content-center">
-            <div class="col-xl-6">
-              <div class="section-title text-center">
-                <h2>калькулятор масок</h2>
-                <p>Через</p>
-                <div
-                  class="input-calculator m-auto text-center"
-                  style="
-                    border: 3px solid gray;
-                    border-color: gray;
-                    border-radius: 6px;
-                    padding: 4px 10px;
-                    width: fit-content;
-                  "
-                >
-                  <input
-                    class="calculator"
-                    style="
-                      outline: none;
-                      border: transparent;
-                      border-width: 0px;
-                      width: 30px;
-                      background: transparent;
-                      text-align: center;
-                    "
-                  />
-                </div>
-                <p>дн(я/ей) будет произведено</p>
-                <h3>3556474883</h3>
-                <p>масок</p>
-                <p>Я использую</p>
-                <div
-                  class="input-calculator"
-                  style="
-                    border: 3px solid gray;
-                    border-color: gray;
-                    border-radius: 6px;
-                    padding: 4px 10px;
-                    width: fit-content;
-                    text-align: center;
-                    margin: auto;
-                  "
-                >
-                  <input
-                    class="calculator"
-                    style="
-                      outline: none;
-                      border: transparent;
-                      border-width: 0px;
-                      width: 30px;
-                      background: transparent;
-                      text-align: center;
-                    "
-                  />
-                </div>
-                <p>мас(ки/ок) в день</p>
-                <h3>53672876</h3>
-                <p>
-                  мас(ки/ок) я потратил за время пандемии, которые будут
-                  разлагаться
-                </p>
-                <p>лет, что экивалентно времени разлагания:</p>
-              </div>
-            </div>
-            <div class="row justify-content-center">
-              <div class="col-xl-4 col-lg-4 col-md-6">
-                <div class="have-symptom-content">
-                  <span><img src="./" alt="" /></span>
-                  <h3>435728</h3>
-                  <h4>Пластиковых бутылок</h4>
-                </div>
-              </div>
-              <div class="col-xl-4 col-lg-4 col-md-6">
-                <div class="have-symptom-content">
-                  <span><img src="./images/icons/face.png" alt="" /></span>
-                  <h3>435728</h3>
-                  <h4>Стеклянных бутылок</h4>
-                </div>
-              </div>
-            </div>
+  <div class="footer">
+    <div class="container">
+      <div class="row">
+        <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
+          <div class="copyright">
+            <p>
+              © Copyright 2020 <a href="javascript:void(0)">Corella</a> I
+              All Rights Reserved
+            </p>
           </div>
         </div>
-
-        <div class="cta section-padding">
-          <div class="container">
-            <div class="row">
-              <div class="col-xl-12">
-                <div class="cta-content">
-                  <h2>FOR MORE INFORMATION ON CORONAVIRUS</h2>
-                  <div class="row justify-content-center">
-                    <div class="col-xl-4 col-lg-6 col-md-6">
-                      <div class="cta-call">
-                        <span><i class="mdi mdi-phone"></i></span>
-                        +1234567890
-                      </div>
-                    </div>
-                    <div class="col-xl-4 col-lg-6 col-md-6">
-                      <div class="cta-call">
-                        <span><i class="mdi mdi-web"></i></span>
-                        <a href="javascript:void(0)"> www.example.com </a>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="bottom section-padding">
-          <div class="container">
-            <div class="row">
-              <div class="col-xl-4 col-lg-4 col-md-3 col-sm-8">
-                <div class="bottom-logo">
-                  <img class="pb-3" src="./images/logo-white.png" alt="" />
-
-                  <p>
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                  </p>
-                </div>
-              </div>
-              <div class="col-xl-2 col-lg-2 col-md-2 col-sm-4">
-                <div class="bottom-widget">
-                  <h4 class="widget-title">QUICK LINK</h4>
-                  <ul>
-                    <li><a href="javascript:void(0)">Prevention</a></li>
-                    <li><a href="javascript:void(0)">Qurantine</a></li>
-                    <li><a href="javascript:void(0)">About</a></li>
-                    <li><a href="javascript:void(0)">Help</a></li>
-                  </ul>
-                </div>
-              </div>
-              <div class="col-xl-2 col-lg-2 col-md-3 col-sm-4">
-                <div class="bottom-widget">
-                  <h4 class="widget-title">Important LINK</h4>
-                  <ul>
-                    <li><a href="javascript:void(0)">Hand Wash</a></li>
-                    <li><a href="javascript:void(0)">Social Distance</a></li>
-                    <li><a href="javascript:void(0)">Isolate</a></li>
-                    <li><a href="javascript:void(0)">Difference</a></li>
-                  </ul>
-                </div>
-              </div>
-              <div class="col-xl-4 col-lg-4 col-md-4 col-sm-8">
-                <div class="bottom-widget">
-                  <h4 class="widget-title">Helpful LINK</h4>
-                  <div class="row">
-                    <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6">
-                      <ul>
-                        <li><a href="javascript:void(0)">Preparation</a></li>
-                        <li><a href="javascript:void(0)">Clean</a></li>
-                        <li><a href="javascript:void(0)">WHO Website</a></li>
-                        <li><a href="javascript:void(0)">CDC Website</a></li>
-                      </ul>
-                    </div>
-                    <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6">
-                      <ul>
-                        <li><a href="javascript:void(0)">Harvard Health</a></li>
-                        <li><a href="javascript:void(0)">NHS Website</a></li>
-                        <li><a href="javascript:void(0)">XMR to BTC</a></li>
-                        <li><a href="javascript:void(0)">ETC to DASH</a></li>
-                      </ul>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="footer">
-          <div class="container">
-            <div class="row">
-              <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
-                <div class="copyright">
-                  <p>
-                    © Copyright 2020 <a href="javascript:void(0)">Corella</a> I
-                    All Rights Reserved
-                  </p>
-                </div>
-              </div>
-              <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
-                <div class="footer-social">
-                  <ul>
-                    <li>
-                      <a href="javascript:void(0)"
-                        ><i class="fa fa-facebook"></i
-                      ></a>
-                    </li>
-                    <li>
-                      <a href="javascript:void(0)"
-                        ><i class="fa fa-twitter"></i
-                      ></a>
-                    </li>
-                    <li>
-                      <a href="javascript:void(0)"
-                        ><i class="fa fa-linkedin"></i
-                      ></a>
-                    </li>
-                    <li>
-                      <a href="javascript:void(0)"
-                        ><i class="fa fa-youtube"></i
-                      ></a>
-                    </li>
-                  </ul>
-                </div>
-              </div>
-            </div>
+        <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
+          <div class="footer-social">
+            <ul>
+              <li>
+                <a href="javascript:void(0)"><i class="fa fa-facebook"></i></a>
+              </li>
+              <li>
+                <a href="javascript:void(0)"><i class="fa fa-twitter"></i></a>
+              </li>
+              <li>
+                <a href="javascript:void(0)"><i class="fa fa-linkedin"></i></a>
+              </li>
+              <li>
+                <a href="javascript:void(0)"><i class="fa fa-youtube"></i></a>
+              </li>
+            </ul>
           </div>
         </div>
       </div>
     </div>
-    <script src="./js/global.js"></script>
-    <script src="./vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  </div>
+  </div>
+  </div>
+  <script src="./js/global.js"></script>
+  <script src="./vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 
-    <script src="./vendor/owl-carousel/js/owl.carousel.min.js"></script>
-    <script src="./js/plugins/owl-carousel-init.js"></script>
-    <script src="./vendor/magnific-popup/magnific-popup.js"></script>
-    <script src="./js/scripts.js"></script>
-  </body>
+  <script src="./vendor/owl-carousel/js/owl.carousel.min.js"></script>
+  <script src="./js/plugins/owl-carousel-init.js"></script>
+  <script src="./vendor/magnific-popup/magnific-popup.js"></script>
+  <script src="./js/scripts.js"></script>
+  <script>
+    let days = 7;
+    const daysInput = document.querySelector("#days");
+    const masksAfterDaysNode = document.querySelector("#masks-after-days")
+
+    daysInput.oninput = onDaysInputChange;
+
+    function onDaysInputChange() {
+      days = daysInput.value || days;
+      let masks = 0;
+      if (days) {
+        masks = parseInt(days) * 8000000;
+      }
+
+      masksAfterDaysNode.innerHTML = masks
+    }
+
+    daysInput.value = days;
+    onDaysInputChange();
+  </script>
+  <script>
+    let masksPerDay = 1;
+    const maskInput = document.querySelector("#mask");
+    const masksOnCovidNode = document.querySelector("#masks-on-covid")
+    const plasticBottlesNode = document.querySelector("#plastic-bottles")
+    const plasticBagsNode = document.querySelector("#plastic-bags")
+
+    maskInput.oninput = onMaskInputChange;
+
+    function onMaskInputChange() {
+      masksPerDay = maskInput.value || days
+      let masksDuringCovid = 0;
+      let plasticBottles = 0;
+      let plasticBags = 0;
+      if (masksPerDay) {
+        masksDuringCovid = parseInt(masksPerDay) * 1095;
+        plasticBottles = parseInt(masksDuringCovid / 15);
+        plasticBags = parseInt(masksDuringCovid / 15);
+      }
+
+      masksOnCovidNode.innerHTML = masksDuringCovid;
+      plasticBottlesNode.innerHTML = plasticBottles;
+      plasticBagsNode.innerHTML = plasticBags;
+    }
+
+    maskInput.value = masksPerDay
+    onMaskInputChange()
+  </script>
+</body>
+
 </html>

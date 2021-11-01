@@ -1,0 +1,19 @@
+.pt-100 {
+  padding-top: 100px;
+}
+
+.-r-10p {
+  right: 10%;
+}
+
+.-t-30wh {
+  top: -30vh;
+}
+
+.w-60p {
+  width: 60%;
+}
+
+.w-60vw {
+  width: 60vw;
+}
