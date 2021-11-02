@@ -246,18 +246,26 @@
           </div>
           <div class="col-xl-6 col-12">
             <div class="row">
-              <div class="col-md-6 col-12">
-                <div class="have-symptom-content">
-                  <span><img src="./" alt="" /></span>
-                  <h3 id="plastic-bottles">435728</h3>
-                  <h4>Пластиковых бутылок</h4>
+              <div class="col-md-6 col-12 d-flex justify-content-between">
+                <div class="card w-100 bg-white p-4 text-center d-flex justify-content-between flex-column">
+                  <div class="mx-auto col-4 mb-4">
+                    <img class="img-fluid" src="./images/bottle.svg" alt="" />
+                  </div>
+                  <div>
+                    <h2 class="mb-2" id="plastic-bottles">435728</h2>
+                    <h4>Пластиковых бутылок</h4>
+                  </div>
                 </div>
               </div>
-              <div class="col-md-6 col-12">
-                <div class="have-symptom-content">
-                  <span><img src="./images/icons/face.png" alt="" /></span>
-                  <h3 id="plastic-bags">435728</h3>
-                  <h4>Пластиковые пакеты</h4>
+              <div class="col-md-6 col-12 d-flex justify-content-between">
+                <div class="card w-100 bg-white p-4 text-center d-flex justify-content-between flex-column">
+                  <div class="mx-auto col-6 mb-4">
+                    <img class="img-fluid" src="./images/packet.svg" alt="" />
+                  </div>
+                  <div>
+                    <h2 id="plastic-bags">435728</h2>
+                    <h4>Пластиковых пакетов</h4>
+                  </div>
                 </div>
               </div>
             </div>
@@ -272,56 +280,12 @@
       <div class="row">
         <div class="col-xl-4 col-lg-4 col-md-3 col-sm-8">
           <div class="bottom-logo">
-            <img class="pb-3" src="./images/logo-white.png" alt="" />
-
+            <h1>
+              <span class="" style="color: #F8F9FE">ECOvidstats</span>
+            </h1>
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+              Мусор от пандемии - новая проблема экологии
             </p>
-          </div>
-        </div>
-        <div class="col-xl-2 col-lg-2 col-md-2 col-sm-4">
-          <div class="bottom-widget">
-            <h4 class="widget-title">QUICK LINK</h4>
-            <ul>
-              <li><a href="javascript:void(0)">Prevention</a></li>
-              <li><a href="javascript:void(0)">Qurantine</a></li>
-              <li><a href="javascript:void(0)">About</a></li>
-              <li><a href="javascript:void(0)">Help</a></li>
-            </ul>
-          </div>
-        </div>
-        <div class="col-xl-2 col-lg-2 col-md-3 col-sm-4">
-          <div class="bottom-widget">
-            <h4 class="widget-title">Important LINK</h4>
-            <ul>
-              <li><a href="javascript:void(0)">Hand Wash</a></li>
-              <li><a href="javascript:void(0)">Social Distance</a></li>
-              <li><a href="javascript:void(0)">Isolate</a></li>
-              <li><a href="javascript:void(0)">Difference</a></li>
-            </ul>
-          </div>
-        </div>
-        <div class="col-xl-4 col-lg-4 col-md-4 col-sm-8">
-          <div class="bottom-widget">
-            <h4 class="widget-title">Helpful LINK</h4>
-            <div class="row">
-              <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6">
-                <ul>
-                  <li><a href="javascript:void(0)">Preparation</a></li>
-                  <li><a href="javascript:void(0)">Clean</a></li>
-                  <li><a href="javascript:void(0)">WHO Website</a></li>
-                  <li><a href="javascript:void(0)">CDC Website</a></li>
-                </ul>
-              </div>
-              <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6">
-                <ul>
-                  <li><a href="javascript:void(0)">Harvard Health</a></li>
-                  <li><a href="javascript:void(0)">NHS Website</a></li>
-                  <li><a href="javascript:void(0)">XMR to BTC</a></li>
-                  <li><a href="javascript:void(0)">ETC to DASH</a></li>
-                </ul>
-              </div>
-            </div>
           </div>
         </div>
       </div>
@@ -334,8 +298,8 @@
         <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
           <div class="copyright">
             <p>
-              © Copyright 2020 <a href="javascript:void(0)">Corella</a> I
-              All Rights Reserved
+              2021  I
+              Проектная работа Литвинчук Елены Сергеевны
             </p>
           </div>
         </div>
@@ -343,16 +307,10 @@
           <div class="footer-social">
             <ul>
               <li>
-                <a href="javascript:void(0)"><i class="fa fa-facebook"></i></a>
+                <a href="https://vk.com/llitvinchuk_04"><i class="fa fa-vk"></i></a>
               </li>
               <li>
-                <a href="javascript:void(0)"><i class="fa fa-twitter"></i></a>
-              </li>
-              <li>
-                <a href="javascript:void(0)"><i class="fa fa-linkedin"></i></a>
-              </li>
-              <li>
-                <a href="javascript:void(0)"><i class="fa fa-youtube"></i></a>
+                <a href="https://www.instagram.com/_llitvinchuk_/?hl=ru"><i class="fa fa-instagram"></i></a>
               </li>
             </ul>
           </div>
@@ -379,7 +337,7 @@
     function onDaysInputChange() {
       days = daysInput.value || days;
       let masks = 0;
-      if (days) {
+      if (days>0) {
         masks = parseInt(days) * 8000000;
       }
 
@@ -403,10 +361,10 @@
       let masksDuringCovid = 0;
       let plasticBottles = 0;
       let plasticBags = 0;
-      if (masksPerDay) {
+      if (masksPerDay>0) {
         masksDuringCovid = parseInt(masksPerDay) * 1095;
-        plasticBottles = parseInt(masksDuringCovid / 15);
-        plasticBags = parseInt(masksDuringCovid / 15);
+        plasticBottles = parseInt(masksDuringCovid / 4);
+        plasticBags = parseInt(masksDuringCovid * 4);
       }
 
       masksOnCovidNode.innerHTML = masksDuringCovid;
